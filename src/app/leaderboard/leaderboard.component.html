@@ -1,3 +1,16 @@
-<p>
-  leaderboard works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Leaderboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let player of players">
+      <ion-label>{{ player.name }}</ion-label>
+      <ion-badge slot="end">{{ player.score }}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,3 +1,21 @@
-<p>
-  admin works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Admin Interface
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="newPlayer.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Score</ion-label>
+      <ion-input type="number" [(ngModel)]="newPlayer.score"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="addPlayer()">Add Player</ion-button>
+</ion-content>
