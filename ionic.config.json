@@ -1,0 +1,7 @@
+{
+  "name": "Bahdelny Leaderboard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
